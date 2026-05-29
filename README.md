@@ -2,6 +2,10 @@
 
 > Forenly's entry for the **Protocol SIFT** hackathon (SANS / teamdfir) — *Autonomous Robotics & Cyber-Physical Digital Forensics & Incident Response (DFIR).* Theme: **FIND EVIL!**
 
+## Community
+
+Building this in the open — join the team chat on Discord: https://discord.gg/qzs8PraeXS
+
 ## What is Protocol SIFT
 
 Protocol SIFT integrates AI agents with the **SANS SIFT Workstation** — 200+ incident-response tools on a single platform — through the **Model Context Protocol (MCP)**. Our implementation focuses specifically on **Autonomous Robotics & Cyber-Physical Forensics**, enabling automated digital forensics for compromised physical robots, edge controllers, and OT (Operational Technology) systems.
