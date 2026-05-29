@@ -1,16 +1,16 @@
-# Forenly · Protocol SIFT — "FIND EVIL!" Hackathon
+# Forenly · Protocol SIFT — Cyber-Physical "FIND EVIL!"
 
-> Forenly AI Systems' entry for the **Protocol SIFT** hackathon (SANS / teamdfir) — *AI-assisted Digital Forensics & Incident Response.* Theme: **FIND EVIL!**
+> Forenly's entry for the **Protocol SIFT** hackathon (SANS / teamdfir) — *Autonomous Robotics & Cyber-Physical Digital Forensics & Incident Response (DFIR).* Theme: **FIND EVIL!**
 
 ## What is Protocol SIFT
 
-Protocol SIFT integrates AI agents with the **SANS SIFT Workstation** — 200+ incident-response tools on a single platform — through the **Model Context Protocol (MCP)**. An analyst types what they need in natural language; the AI selects tools, executes them, reasons about the output, and produces structured reports.
+Protocol SIFT integrates AI agents with the **SANS SIFT Workstation** — 200+ incident-response tools on a single platform — through the **Model Context Protocol (MCP)**. Our implementation focuses specifically on **Autonomous Robotics & Cyber-Physical Forensics**, enabling automated digital forensics for compromised physical robots, edge controllers, and OT (Operational Technology) systems.
 
-The hackathon mission: sharpen this proof of concept into a production-grade capability.
+The hackathon mission: automate the triage of cyber-physical exploits using MCP-driven AI agents.
 
 ## What we're building
 
-_TBD — one-paragraph concept._ An agentic DFIR workflow on top of the Protocol SIFT MCP layer: natural-language triage of disk images and memory captures, autonomous tool-chaining across SIFT's IR toolset, and structured, analyst-ready incident reports with evidence citations.
+An agentic cyber-physical forensics workflow on top of SANS SIFT over MCP. When an autonomous robot (e.g., ROS 2-based inspection platforms, automated factory machines, or mobile patrol rovers) exhibits anomalous behavior or is compromised in the field, our agent performs natural-language triage of robot memory dumps, navigation/SLAM logs, and kernel traces. It autonomously chains SIFT tools (such as Volatility and Plaso) to detect malicious node injections, motion control overrides, or spatial perception tampering, generating a comprehensive, safety-cited incident report.
 
 > Cross-leverage: shares the agentic-security investigation pattern with our Splunk Agentic Ops (Security track) and UiPath Maestro (cybersecurity) work — alarm/case → reasoned tool-chain → root cause + remediation playbook.
 
