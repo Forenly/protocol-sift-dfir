@@ -32,11 +32,13 @@ _(Our run instructions, dependencies, and example configs/datasets to be filled 
 
 ## Resources
 
+- **Our Cyber-Physical Forensics Mapping:** [`docs/RESOURCES_AND_DATASETS.md`](./docs/RESOURCES_AND_DATASETS.md) — exact mapping of SIFT tools to robot/OT forensic artifacts, including public datasets.
 - **SANS blog:** *Protocol SIFT: An Experimental Research Initiative for AI-Assisted DFIR* (sans.org)
 - **Rob T. Lee's Substack:** *Introducing Protocol SIFT: Meeting AI Threat Speed with Defensive AI Orchestration*
 - **Anthropic GTG-1002 threat report** — the offensive operation that validates why Protocol SIFT matters
 - **Quality bar / example submission:** [AppliedIR/Valhuntir](https://github.com/AppliedIR/Valhuntir) — Valhuntir CLI, AI-augmented IR platform (by Steve Anson, SANS author)
 - **Protocol SIFT NotebookLM notebook** — primary Q&A resource for what/how to build
+
 
 ## Submission checklist
 
