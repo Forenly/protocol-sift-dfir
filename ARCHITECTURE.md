@@ -4,30 +4,23 @@
 
 ## High-level flow
 
-```
-   Analyst (natural language)
-            │
-            ▼
-   ┌──────────────────┐        ┌──────────────────────────────┐
-   │   AI Agent /     │  MCP   │  Protocol SIFT MCP Server     │
-   │   LLM client     │◄──────►│  (on SANS SIFT Workstation)   │
-   │ (tool selection, │        │  exposes 200+ IR tools        │
-   │  reasoning loop) │        │  as MCP tools                 │
-   └──────────────────┘        └──────────────┬───────────────┘
-            ▲                                  │ exec
-            │ structured report                ▼
-            │                    ┌──────────────────────────────┐
-            │                    │  SIFT toolset                 │
-            │                    │  (Volatility, Plaso, Sleuth   │
-            │                    │   Kit, bulk_extractor, YARA…) │
-            │                    └──────────────┬───────────────┘
-            │                                   │ reads
-            │                                   ▼
-            │                    ┌──────────────────────────────┐
-            └────────────────────│  Evidence: disk images,       │
-              reasoning over      │  memory captures, artifacts   │
-              tool output         └──────────────────────────────┘
-```
+### Analyst Interaction Flow
+
+1. **Analyst (Natural Language)**: Initiates queries or goals (e.g., "Find persistence mechanisms on this image").
+2. **AI Agent / LLM Client**:
+   * Interprets natural language request.
+   * Plans the forensic investigation tool-chain.
+   * Exchanges requests/responses over **MCP** with the Protocol SIFT server.
+   * Runs an iterative reasoning loop over tool outputs.
+   * Emits structured, cited forensic reports.
+3. **Protocol SIFT MCP Server**:
+   * Runs locally on the **SANS SIFT Workstation**.
+   * Exposes 200+ DFIR tools (Volatility, Plaso, Sleuth Kit, bulk_extractor, YARA, etc.) as clean MCP tools with schemas.
+   * Executes tools directly against the evidence store.
+4. **Evidence Store**:
+   * Contains disk images, memory captures, and registry hives.
+   * Read by SIFT forensic tools to populate results for the agent.
+
 
 ## Components
 
